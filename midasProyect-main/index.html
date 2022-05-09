@@ -23,49 +23,57 @@
     <title>Data Midas Studio</title>
 <!--elimina subrayado de <a>-->
     <style>a{text-decoration: none;} </style>
-
+<!--JQUERY-->
+<!--JQUERY-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script lang="javascript" src="./js/animation.js"></script>
 </head>
 <body>
- <!--SECCION DE NAV BAR-->
+<!--SECCION DE NAV BAR-->
 <header class="sectionNavBar">
- <nav class="containerItemsNav">
-     <div> <p class="logo">MIDAS</p>
-         <P class="logo">DATA STUDIO</P>
-     </div>
-     <button class="menuIcon">
-         <i class="fa-solid fa-bars"></i>  
-     </button>
-     <ul class="itemsNavBar itemsNavBar-visible">
-         <li>
-         <a href="#">Nosotros</a>
-         </li>
-         <li>
-         <a href="#">Nuestros servicios</a>
-         </li>
-         <li>
-         <a href="#">Trabajos realizados</a>
-         </li>
-         <li>
-         <a href="#">Trabajá con nosotros</a>
-         </li>
-         <li>
-             <a href="#">Contacto</a>
-         </li>
-     </ul>
- </nav>
+    <nav class="containerItemsNav">
+        <div> <p class="logo">MIDAS</p>
+            <P class="logo">DATA STUDIO</P>
+        </div>
+        <button class="menuIcon">
+            <i class="fa-solid fa-bars"></i>  
+        </button>
+        <ul class="itemsNavBar itemsNavBar-visible">
+            <li>
+            <a href="#">Nosotros</a>
+            </li>
+            <li>
+            <a href="#">Nuestros servicios</a>
+            </li>
+            <li>
+            <a href="#">Trabajos realizados</a>
+            </li>
+            <li>
+                <a href="#">¿Que dicen?</a>
+            </li>
+            <li>
+            <a href="#">Trabajá con nosotros</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
-<div class="sectionWe">
+<section class="sectionWe">
     <img src="./assets/image/weImg.jpg" alt="Our History" class="bgroundWe">
-    <div class="textWe"><p>Somos un equipo de
-        desarrolladores y 
-        profesionales con 
-        experiencia en el campo 
-        de la ciencia de datos.</p>
-    </div>
-    <button class="btnWe">BUTTOM</button>
+<div class="weTextcontainer">
+    <p class="textWe">Somos un equipo de
+desarrolladores y 
+profesionales con 
+experiencia en el campo 
+de la ciencia de datos.</p>
 </div>
- <div class="sectionService">
+    <button class="btnWe">BUTTOM</button>
+</section>
+
+<!-- <div class="sectionService">
  
  </div>
  <div class="sectionWorks">
@@ -76,7 +84,9 @@
  <div class="sectionFooter">
  
  </div>
-</div>
+ -->
+
+
  <section id="works">
   <h2>OUR WORKS</h2>
   <div class="worksDone">
@@ -96,7 +106,13 @@
    </div>
   </div>
  </section>
- 
+
+<section class="sectionWorkWithUs">
+<div class="workWeUsContainer" >
+<h3 class="textWorkWithUs">TRABAJA CON NOSOTROS</h3>
+</div>
+
+</section>
 <section id="contact" class="contactContainer">
  <form class="contactForm" >
   <input type="text" name="name" placeholder="Name" title="El nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" required >
