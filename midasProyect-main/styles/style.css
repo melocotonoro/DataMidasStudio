@@ -107,18 +107,18 @@ opacity: 1;
  cursor: pointer;
  }
 
-/*SECTION WE*/
-.sectionWe{
+/*SECTION ABOUT*/
+.sectionAbout{
 width: 100%;
 background-color: #222;
 }
 
-.bgroundWe{
+.bgAbout{
 width: 100%;
 height: 80vh;
 }
 
-.weTextcontainer{
+.aboutTextcontainer{
 background-color: rgb(34, 34, 34,.75);
 width: 45%;
 height: 80vh;
@@ -126,7 +126,9 @@ padding: 3.75rem 6.875rem 3.75rem 12.5rem;
 position:absolute;
 top: 0%;
 }
-.btnWe{
+
+
+.btnAbout{
 position: absolute;
 right:48%;
 top: 60%;
@@ -145,14 +147,14 @@ font-weight: 700;
 box-shadow: 0px 0px 14px -7px #f09819;
 }
 
-.btnWe:is(:hover, :active) {
+.btnAbout:is(:hover, :active) {
 background-position: right center;
 /* change the direction of the change here */
 color: #fff;
 text-decoration: none;
 }
 
-.textWe{
+.textAbout{
 width:30vw;
 position: absolute;
 top: 30%;
@@ -215,7 +217,7 @@ width: 15rem;
  left: 0px;
  top: 80px;
  overflow-y: auto;
- transition: top 0.8s;
+ transition: top 1.5s;
  }
  .logo{
  font-size:1em;
@@ -229,13 +231,13 @@ color: darkgoldenrod;
 margin-left: 40vw;
 display: block;
 }
-.itemsNavBar-visible{
-height: 10em;
+.itemsNavBar_visible{
+height: 10.5em;
 }
 
 
-/******Section we**/
-.btnWe{
+/******SECTION ABOUT****/
+.btnAbout{
 right:30%;
 top: 35%;
 margin:10px;
@@ -243,17 +245,17 @@ padding: 10px 15px;
 background-size: 200% auto;
 font-weight: 300;
 }
-.bgroundWe{
+.bgAbout{
 height: 50vh;
 width: 100%;
 }
-.weTextcontainer{
+.aboutTextcontainer{
 width: 45%;
 height: 51vh;
 position:absolute;
 top: 0%;
 }
-.textWe{
+.textAbout{
 top: 35%;
 font-size:2.5vw ;
 }
@@ -272,13 +274,13 @@ background-repeat: no-repeat;
 .menuIcon{
 margin-left: 30vw;
 }
-/***SECTION WE***/
-.textWe{
+/***SECTION ABOUT***/
+.textAbout{
 font-size:4.2vw;
 width: auto;
 }
 
-.btnWe{
+.btnAbout{
 right:5%;
 top: 38%;
 margin:10px;
