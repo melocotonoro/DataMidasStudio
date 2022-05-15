@@ -3,6 +3,7 @@ animationNavBar();
 collapse();
 scrollButton();
 transitionWeImg();
+transition();
 }
 function animationNavBar(){
 $(".sectionNavBar").hide();
@@ -72,7 +73,7 @@ document.addEventListener('click', e => {
 });
 }
 
-//TRANSITION SECTION WE
+//TRANSITION SECTION ABOUT
 
 function transitionWeImg(){
 $(".sectionAbout").hide();
@@ -83,3 +84,23 @@ experiencia en el campo de la ciencia de datos.</p></div>
 $(".sectionAbout").fadeIn(6000)
 }
 
+
+function transition(){
+const imgAbout= document.querySelector(".aboutTextcontainer")
+const imgWorksWUs= document.querySelector(".sectionWorkWithUs")
+
+const cback=(entries)=>{
+entries.forEach(entries => {
+if(entries.isIntersecting){
+entries.target.classList.add("visible")
+}    
+});
+}
+
+const containerSection= new IntersectionObserver (cback,{
+    root:null,
+    threshold:0.75,
+});
+containerSection.observe(imgAbout);
+containerSection.observe(imgWorksWUs);
+}
