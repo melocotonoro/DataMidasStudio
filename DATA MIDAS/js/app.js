@@ -4,6 +4,7 @@ collapse();
 scrollButton();
 transitionWeImg();
 transition();
+directionPageAbout();
 }
 function animationNavBar(){
 $(".sectionNavBar").hide();
@@ -103,4 +104,13 @@ const containerSection= new IntersectionObserver (cback,{
 });
 containerSection.observe(imgAbout);
 containerSection.observe(imgWorksWUs);
+}
+
+function directionPageAbout(){
+
+const clickBtnAbout= document.querySelector(".btnAbout")
+
+clickBtnAbout.addEventListener("click", ()=>{
+location.href= "AboutUs.html"
+})
 }
